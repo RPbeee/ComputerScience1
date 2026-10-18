@@ -1,2 +1,8 @@
 .DS_Store
 .ipynb_checkpoints/
+
+# 非公開(ローカルのみ)
+CS1_day2_HW.ipynb
+tst.py
+*_preview.*
+template*.md
