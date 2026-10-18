@@ -1,0 +1,12 @@
+\usepackage{xcolor}
+\usepackage[most]{tcolorbox}
+\usepackage{titlesec}
+\definecolor{accent}{HTML}{2B6CB0}
+\titleformat{\section}{\Large\bfseries\color{accent}}{}{0em}{}[\vspace{-0.6em}\textcolor{accent}{\rule{\linewidth}{0.8pt}}]
+\titleformat{\subsection}{\large\bfseries}{}{0em}{\colorbox{accent}{\textcolor{white}{\ \strut}}\ }
+\titleformat{\subsubsection}{\large\bfseries\color{accent}}{}{0em}{}
+\renewenvironment{Shaded}{\begin{tcolorbox}[breakable,colback=gray!8,colframe=gray!50,boxrule=0.4pt,arc=2pt,left=4pt,right=4pt,top=2pt,bottom=2pt]}{\end{tcolorbox}}
+\usepackage{setspace}\setstretch{1.35}
+\setlength{\parskip}{0.6em}
+\newtcolorbox{kaisetsuinner}{breakable,enhanced,colback=accent!6,colframe=accent,boxrule=0pt,leftrule=3pt,arc=2pt,title=\textbf{細かい解説},coltitle=accent,colbacktitle=accent!6,fonttitle=\bfseries,attach boxed title to top left={yshift=-2mm},boxed title style={colback=white,boxrule=0pt,top=0pt,bottom=0pt},left=8pt,right=8pt,top=6pt,bottom=4pt}
+\newenvironment{kaisetsu}{\begin{kaisetsuinner}}{\end{kaisetsuinner}}
