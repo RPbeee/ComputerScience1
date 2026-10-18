@@ -8,26 +8,25 @@
 <style>
 :root{
   --bg:#f6f7fb; --card:#fff; --text:#1d2433; --muted:#6b7385;
-  --accent:#3b6df0; --accent2:#7c4dff; --border:#e3e6ef; --shadow:0 1px 2px rgba(20,30,60,.06),0 8px 24px rgba(20,30,60,.06);
+  --accent:#3b6df0; --border:#e3e6ef; --shadow:0 1px 2px rgba(20,30,60,.06),0 8px 24px rgba(20,30,60,.06);
 }
 @media (prefers-color-scheme:dark){
-  :root{--bg:#0f121a; --card:#181c27; --text:#e8ebf3; --muted:#98a0b3; --accent:#7b9bff; --accent2:#a58bff; --border:#272c3a; --shadow:none}
+  :root{--bg:#0f121a; --card:#181c27; --text:#e8ebf3; --muted:#98a0b3; --accent:#7b9bff; --border:#272c3a; --shadow:none}
 }
 *{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--text);
   font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Hiragino Kaku Gothic ProN","Noto Sans JP",sans-serif;line-height:1.7}
-header{padding:4rem 1.25rem 3rem;text-align:center;color:#fff;
-  background:linear-gradient(135deg,var(--accent),var(--accent2))}
-header p{margin:0 0 .5rem;font-size:.85rem;letter-spacing:.2em;opacity:.85}
+header{padding:4rem 1.25rem 2rem;text-align:center}
+header p{margin:0 0 .5rem;font-size:.85rem;letter-spacing:.2em;color:var(--muted)}
 header h1{margin:0;font-size:clamp(1.6rem,5vw,2.4rem);line-height:1.3}
-main{max-width:44rem;margin:-1.5rem auto 3rem;padding:0 1.25rem}
+main{max-width:44rem;margin:0 auto 3rem;padding:0 1.25rem}
 .list{display:grid;gap:1rem}
 a.card{display:flex;align-items:center;gap:1rem;padding:1.1rem 1.25rem;background:var(--card);
   border:1px solid var(--border);border-radius:14px;box-shadow:var(--shadow);color:inherit;text-decoration:none;
   transition:transform .15s,border-color .15s}
 a.card:hover,a.card:focus-visible{transform:translateY(-2px);border-color:var(--accent);outline:none}
 .num{flex:none;width:3rem;height:3rem;border-radius:12px;display:grid;place-items:center;
-  font-weight:700;color:#fff;background:linear-gradient(135deg,var(--accent),var(--accent2))}
+  font-weight:700;color:#fff;background:var(--accent)}
 .title{font-weight:600}
 .sub{font-size:.85rem;color:var(--muted)}
 .arrow{margin-left:auto;color:var(--muted);font-size:.85rem;white-space:nowrap}
